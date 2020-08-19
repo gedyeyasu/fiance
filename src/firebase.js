@@ -1,12 +1,12 @@
 import firebase from "firebase";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA577I6iKqbHT2OhADk9vmjtweiGHYTFz4",
-  authDomain: "fiance-2a39b.firebaseapp.com",
-  databaseURL: "https://fiance-2a39b.firebaseio.com",
+  apiKey: os.env.get(apikey),
+  authDomain: os.env.get(authDomain),
+  databaseURL: os.env.get(url),
   projectId: "fiance-2a39b",
-  storageBucket: "fiance-2a39b.appspot.com",
-  messagingSenderId: "276710390783",
+  storageBucket: os.env.get(storage),
+  messagingSenderId: os.env.get(mId),
   appId: "1:276710390783:web:501fec95231dcd033ac5ca",
   measurementId: "G-VRJK74KYEX",
 };
